@@ -1,0 +1,87 @@
+.stats-preview-card {
+	position: relative;
+	margin: 0 2.4rem;
+	border-radius: 0.8rem;
+	box-shadow: 0 2rem 2rem -1rem rgba(23, 25, 41, 0.2);
+	background: var(--lost-in-sadness);
+}
+
+.stats-preview-card__image-wrapper {
+	position: relative;
+	background-color: var(--teldrassil-purple);
+	border-radius: 0.8rem 0.8rem 0 0;
+	overflow: hidden;
+}
+
+.stats-preview-card__image {
+	max-height: 24rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.stats-preview-card__content {
+	padding: 4rem 3.15rem 3.2rem 3.15rem;
+}
+
+.stats-preview-card__title {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	line-height: 114%;
+	text-align: center;
+	color: var(--white);
+	margin-bottom: 1.6rem;
+}
+
+.stats-preview-card__title--color--teldrassil-purple {
+	color: var(--teldrassil-purple);
+}
+
+.stats-preview-card__text {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 167%;
+	text-align: center;
+	color: var(--white);
+	opacity: 0.75;
+	margin-bottom: 4rem;
+}
+
+.stats-preview-card__statistics {
+	display: flex;
+	flex-direction: column;
+}
+
+.statistics {
+	align-items: center;
+	justify-content: center;
+	row-gap: 2.4rem;
+}
+
+.statistics__field {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 0.2rem;
+}
+
+.statistics__parameter-name {
+	font-family: var(--second-family), sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 208%;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--white);
+}
+
+.statistics__parameter-value {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 700;
+	font-size: 2.4rem;
+	text-align: center;
+	color: var(--white);
+}
