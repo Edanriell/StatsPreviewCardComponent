@@ -4,6 +4,12 @@
 	border-radius: 0.8rem;
 	box-shadow: 0 2rem 2rem -1rem rgba(23, 25, 41, 0.2);
 	background: var(--lost-in-sadness);
+
+	@media (width >= 1440px) {
+		display: grid;
+		grid-template-columns: 57rem 54rem;
+		grid-template-rows: auto;
+	}
 }
 
 .stats-preview-card__image-wrapper {
@@ -11,16 +17,33 @@
 	background-color: var(--teldrassil-purple);
 	border-radius: 0.8rem 0.8rem 0 0;
 	overflow: hidden;
+
+	@media (width >= 1440px) {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		border-radius: 0 0.8rem 0.8rem 0;
+	}
 }
 
 .stats-preview-card__image {
 	max-height: 24rem;
 	width: 100%;
 	object-fit: cover;
+
+	@media (width >= 1440px) {
+		max-height: unset;
+		height: 100%;
+	}
 }
 
 .stats-preview-card__content {
 	padding: 4rem 3.15rem 3.2rem 3.15rem;
+
+	@media (width >= 1440px) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		padding: 7.1rem 9.5rem 5.9rem 7.15rem;
+	}
 }
 
 .stats-preview-card__title {
@@ -31,6 +54,13 @@
 	text-align: center;
 	color: var(--white);
 	margin-bottom: 1.6rem;
+
+	@media (width >= 1440px) {
+		font-size: 3.6rem;
+		line-height: 122%;
+		text-align: left;
+		margin-bottom: 2.5rem;
+	}
 }
 
 .stats-preview-card__title--color--teldrassil-purple {
@@ -46,25 +76,46 @@
 	color: var(--white);
 	opacity: 0.75;
 	margin-bottom: 4rem;
+
+	@media (width >= 1440px) {
+		text-align: left;
+		margin-bottom: 7.2rem;
+	}
 }
 
 .stats-preview-card__statistics {
 	display: flex;
 	flex-direction: column;
+
+	@media (width >= 1440px) {
+		flex-direction: row;
+	}
 }
 
 .statistics {
 	align-items: center;
 	justify-content: center;
 	row-gap: 2.4rem;
+
+	@media (width >= 1440px) {
+		align-items: center;
+		justify-content: flex-start;
+		column-gap: 6rem;
+		row-gap: 4rem;
+		flex-wrap: wrap;
+	}
 }
 
 .statistics__field {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
 	row-gap: 0.2rem;
+
+	@media (width >= 1440px) {
+		align-items: flex-start;
+	}
 }
 
 .statistics__parameter-name {
@@ -76,6 +127,11 @@
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--white);
+	opacity: 0.6;
+
+	@media (width >= 1440px) {
+		text-align: left;
+	}
 }
 
 .statistics__parameter-value {
@@ -84,4 +140,8 @@
 	font-size: 2.4rem;
 	text-align: center;
 	color: var(--white);
+
+	@media (width >= 1440px) {
+		text-align: left;
+	}
 }
