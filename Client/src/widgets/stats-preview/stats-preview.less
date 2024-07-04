@@ -1,0 +1,152 @@
+.stats-preview-card {
+	position: relative;
+	margin: 0 2.4rem;
+	border-radius: 0.8rem;
+	box-shadow: 0 2rem 2rem -1rem rgba(23, 25, 41, 0.2);
+	background: var(--lost-in-sadness);
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 24rem auto;
+
+	@media (width >= 1440px) {
+		display: grid;
+		grid-template-columns: 57rem 54rem;
+		grid-template-rows: auto;
+	}
+}
+
+.stats-preview-card__image-wrapper {
+	position: relative;
+	// background-color: var(--teldrassil-purple);
+	border-radius: 0.8rem 0.8rem 0 0;
+	overflow: hidden;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	background: top / cover no-repeat url("/images/people-working--sm.jpg") var(--teldrassil-purple);
+
+	@media (width >= 1440px) {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		border-radius: 0 0.8rem 0.8rem 0;
+		background: top / cover no-repeat url("/images/people-working--lg.jpg") var(--teldrassil-purple);
+	}
+}
+
+.stats-preview-card__image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.stats-preview-card__content {
+	padding: 4rem 3.15rem 3.2rem 3.15rem;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+
+	@media (width >= 1440px) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		padding: 7.1rem 9.5rem 5.9rem 7.15rem;
+	}
+}
+
+.stats-preview-card__title {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 700;
+	font-size: 2.8rem;
+	line-height: 114%;
+	text-align: center;
+	color: var(--white);
+	margin-bottom: 1.6rem;
+
+	@media (width >= 1440px) {
+		font-size: 3.6rem;
+		line-height: 122%;
+		text-align: left;
+		margin-bottom: 2.5rem;
+	}
+}
+
+.stats-preview-card__title--color--teldrassil-purple {
+	color: var(--teldrassil-purple);
+}
+
+.stats-preview-card__text {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 167%;
+	text-align: center;
+	color: var(--white);
+	opacity: 0.75;
+	margin-bottom: 4rem;
+
+	@media (width >= 1440px) {
+		text-align: left;
+		margin-bottom: 7.2rem;
+		margin-right: 2.95rem;
+	}
+}
+
+.stats-preview-card__statistics {
+	display: flex;
+	flex-direction: column;
+
+	@media (width >= 1440px) {
+		flex-direction: row;
+	}
+}
+
+.statistics {
+	align-items: center;
+	justify-content: center;
+	row-gap: 2.4rem;
+
+	@media (width >= 1440px) {
+		align-items: center;
+		justify-content: flex-start;
+		column-gap: 6rem;
+		row-gap: 4rem;
+		flex-wrap: wrap;
+	}
+}
+
+.statistics__field {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+	row-gap: 0.2rem;
+
+	@media (width >= 1440px) {
+		align-items: flex-start;
+	}
+}
+
+.statistics__parameter-name {
+	font-family: var(--second-family), sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 208%;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--white);
+	opacity: 0.6;
+
+	@media (width >= 1440px) {
+		text-align: left;
+	}
+}
+
+.statistics__parameter-value {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 700;
+	font-size: 2.4rem;
+	text-align: center;
+	color: var(--white);
+
+	@media (width >= 1440px) {
+		text-align: left;
+	}
+}
