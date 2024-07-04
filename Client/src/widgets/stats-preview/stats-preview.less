@@ -4,6 +4,9 @@
 	border-radius: 0.8rem;
 	box-shadow: 0 2rem 2rem -1rem rgba(23, 25, 41, 0.2);
 	background: var(--lost-in-sadness);
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 24rem auto;
 
 	@media (width >= 1440px) {
 		display: grid;
@@ -14,30 +17,31 @@
 
 .stats-preview-card__image-wrapper {
 	position: relative;
-	background-color: var(--teldrassil-purple);
+	// background-color: var(--teldrassil-purple);
 	border-radius: 0.8rem 0.8rem 0 0;
 	overflow: hidden;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	background: top / cover no-repeat url("/images/people-working--sm.jpg") var(--teldrassil-purple);
 
 	@media (width >= 1440px) {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 		border-radius: 0 0.8rem 0.8rem 0;
+		background: top / cover no-repeat url("/images/people-working--lg.jpg") var(--teldrassil-purple);
 	}
 }
 
 .stats-preview-card__image {
-	max-height: 24rem;
+	height: 100%;
 	width: 100%;
 	object-fit: cover;
-
-	@media (width >= 1440px) {
-		max-height: unset;
-		height: 100%;
-	}
 }
 
 .stats-preview-card__content {
 	padding: 4rem 3.15rem 3.2rem 3.15rem;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
 
 	@media (width >= 1440px) {
 		grid-column: 1 / 2;
@@ -80,6 +84,7 @@
 	@media (width >= 1440px) {
 		text-align: left;
 		margin-bottom: 7.2rem;
+		margin-right: 2.95rem;
 	}
 }
 
